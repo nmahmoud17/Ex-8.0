@@ -39,13 +39,30 @@ public class Sandwich {
         return veggies;
     }
 
-    public Sandwich () {
+    public Sandwich() {
         breadType = "Italian";
         proteinType = "Chicken";
         cheeseType = "Pepper Jack";
         veggies = true;
 
+
     }
+    public Sandwich (String proteinType1,String cheeseType1, boolean veggies1 ) {
+        breadType = "Whole Grain";
+        proteinType = proteinType1;
+        cheeseType = cheeseType1;
+        veggies = veggies1;
+
+    }
+    public Sandwich (String breadType1, String proteinType1,String cheeseType1, boolean veggies1 ) {
+        breadType = breadType1;
+        proteinType = proteinType1;
+        cheeseType = cheeseType1;
+        veggies = veggies1;
+
+    }
+
+
     public void describeSandwich () {
         System.out.println("Sandwich is on " + getBreadType() + " bread");
         System.out.println("It has " + getProteinType() + " and " + getCheeseType());
